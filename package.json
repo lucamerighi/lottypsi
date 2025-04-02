@@ -1,0 +1,28 @@
+{
+  "name": "lottypsi",
+  "version": "1.0.0",
+  "description": "Professional website for psychologist Carlotta Piergiovanni",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "npm run build && lite-server",
+    "dev": "concurrently \"npm run watch\" \"lite-server\"",
+    "deploy": "gh-pages -d .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "psychology",
+    "therapist",
+    "carlotta-piergiovanni"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "gh-pages": "^6.3.0",
+    "lite-server": "^2.6.1",
+    "typescript": "^5.4.2"
+  },
+  "homepage": "https://lucamerighi.github.io/lottypsi"
+}
