@@ -923,6 +923,15 @@ img {
     .expect-steps {
         grid-template-columns: 1fr;
     }
+    
+    /* Fix for mobile navbar overlapping content */
+    .hero {
+        padding-top: 130px;
+    }
+    
+    section:not(.hero) {
+        padding-top: 100px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -931,7 +940,7 @@ img {
     }
 
     .hero {
-        padding-top: 100px;
+        padding-top: 200px;
     }
 
     .hero-content h1 {
